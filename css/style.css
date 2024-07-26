@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", "sans-serif";
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    bottom:500;
+    left: 50;
+    background-color: white;
+}
+.cabecalho{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: seagreen;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    justify-content: space-between;
+    
+}
+
+.logo .logo-img {
+   
+    border-radius: 50%;
+    width: 50%;
+
+
+    
+
+}
+.sidebardsk{
+    display: none;
+}
+
+/*MENU MOBILE*/
+
+.cabecalho .hamburg{
+    padding-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    padding-block: 16px;
+}
+
+.menuMobile{
+   
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menuMobile nav a{
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 3%;
+    color: white;
+   font-size: 18px;
+   font-weight: 300;
+}
+/* .menuMobile nav a i{
+font-size: 50px;
+} */
+ .menuMobile .btnfechar{
+    font-size: 30px;
+    color: red;
+ }
+ .menuMobile.abrir-menu{
+    width: 50%;
+ }
+ 
